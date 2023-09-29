@@ -1,0 +1,370 @@
+/* general */
+
+body, textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+h1, h2, h3{
+	color: #333;
+}
+p{
+	color: #70747a;
+}
+
+/* navber */
+.navbar-container{
+	width: 100%;
+	height: 80px;
+	background-color: #232a31;
+	padding: 0 2em;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.logo{
+	width: 100px;
+	margin-top: 10px;
+}
+
+nav {
+	position: relative;
+}
+
+.navbar-items{
+	list-style: none;
+	position: absolute;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	margin: 0;
+	right: 0;
+}
+.navbar-items li{
+	display: inline-block;
+	text-transform: uppercase;
+	margin-left: 25px;
+}
+
+.navbar-items li a{
+	color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+}
+.navbar-items li a:hover{
+	color: #CCC;
+}
+.default-btn{
+	padding: 15px 20px;
+	background: linear-gradient(to right, rgb(255, 161, 84), rgb(255, 111, 28));
+	border-radius: 5px;
+	color: #FFF;
+	transition: 1s;
+}
+.default-btn:hover{
+	background: linear-gradient(to right, rgb(255, 178, 114), rgb(255, 156, 99));
+}
+
+/* main banner */
+
+.main-banner{
+	background-image: url(https://cdn.leonardo.ai/users/07d72039-2bf3-4831-b04b-08cdfd66e59f/generations/88c4a043-795d-442c-866d-1156cd3708af/variations/Default_realistic_NY_city_landscape_with_orange_sky_2_88c4a043-795d-442c-866d-1156cd3708af_1.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10em 0;
+	position: relative;
+}
+.main-banner h1, .main-banner p{
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+}
+
+.main-banner h1{
+	font-size: 54px;
+}
+
+.main-banner p{
+	font-size: 32px;
+}
+
+/* especialidades */
+
+.specialties-container {
+	padding: 5em 0;
+}
+
+.specialties-container ul {
+	display: flex;
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	justify-content: space-between;
+}
+
+.specialties-container ul li {
+	flex: 1 1 auto;
+	list-style: none;
+	text-align: center;
+	padding: 20px;
+}
+
+.fas{
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+	color:  #48577B;
+}
+
+.fa-rocket{
+	color: #48577B;
+}
+
+.fa-comments{
+	color: #48577B;
+}
+
+.specialties-container ul li h3{
+	margin-bottom: 25px;
+}
+
+.specialties-container ul li p {
+	line-height: 24px;
+}  
+/* preços */ 
+.pricing-container {
+	padding-bottom: 5em;
+	text-align: center;
+}
+
+.pricing-container h1 {
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.pricing-container p {
+	font-size: 20px;
+}
+
+.plans-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.plan {
+	flex: 1 1 200px;
+	max-width: 275px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.plan ul{
+	padding: 0;
+}
+
+.plan li{
+	list-style: none;
+	height: 50px;
+	line-height: 50px;
+	background-color: #E8E9EA;
+	color: #333;
+}
+
+.plan .price{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #48577B;
+	color: #FFF;
+	text-align: center;
+	line-height: 120px;
+	font-size: 18px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -50px;
+}
+
+.plan .plan-name{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #2F4858;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.plan .plan-btn{
+	background: linear-gradient(to right, #48577B, #6e87c1);
+	color: #FFF;
+	font-size: 24px;
+	height: 75px;
+	line-height: 75px;
+	cursor: pointer;
+}
+
+.plan .recommended{
+	background: linear-gradient(to right, #E76B7F, #FF865B);
+}
+
+/* buscar dominio */
+
+.searchdomain-container{
+	background-color: #232a31;
+	text-align: center;
+	padding: 5em 0;
+}
+
+.searchdomain-container h2{
+	color: #FFF;
+	font-size: 42px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.searchdomain-container p{
+	color: #D5D5D5;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.searchdomain-container input{
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	border-radius: 5px;
+}
+
+.searchdomain-container input[type=text]{
+	margin-bottom: 25px;
+	width: 60%;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.searchdomain-container input[type=submit]{
+	background-color: rgb(255, 133, 62);
+	padding: 15px 30px;
+	color: #FFF;
+	font-size: 24px;
+}
+
+/* contato */
+
+.contact-container{
+	text-align: center;
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+
+.container-container h2{
+	font-size: 36px;
+}
+
+.container-container p{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.contact-container input, .contact-container textarea{
+	width: 200px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.contact-container textarea{
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 468px;
+	height: 150px;
+	resize: none;
+}
+
+.contact-container input[type=submit]{
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(255, 133, 62);
+	color: #fff;
+}
+
+
+/* footer */
+
+footer{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+	.plans-container{
+		width: 95%;
+	}
+	.plan{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.plans-container, .specialties-container ul{
+		flex-wrap: wrap;
+	}
+
+}
+
+@media screen and (max-width: 576px){
+	html, body{
+		overflow-x: hidden;
+	}
+	.navbar-items li{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+
+	.plan{
+		width: 100%;
+		max-width: 95%;
+	}
+
+	.searchdomain-container, .contact-container{
+		padding: 3em 2em;
+	}
+
+	.container-container .searchdomain-container input{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.contact-container input, .contact-container textarea{
+		width: 100%;
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		box-sizing: border-box;
+	}
+}
